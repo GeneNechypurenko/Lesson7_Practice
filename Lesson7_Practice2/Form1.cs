@@ -25,9 +25,7 @@ namespace Lesson7_Practice2
             progressBar.Value = progressBarValue;
 
             int total = progressBar.Maximum;
-            int stepsSecond = total / 10;
-            int step = stepsSecond * timer1.Interval / 1000;
-
+            int step = total / 10;
 
             timer1.Tick += (s, args) =>
             {
